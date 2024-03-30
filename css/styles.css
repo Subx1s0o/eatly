@@ -464,7 +464,6 @@ body {
   border: 0.2px solid #edf2f7;
   box-shadow: 10px 13px 27px 0 rgba(26, 32, 44, 0.15);
   border-radius: 12px;
-  width: 147px;
   padding: 8px 0;
   object-fit: contain;
 }
@@ -484,10 +483,6 @@ body {
 @media (max-width: 991px) {
   .hero-title {
     font-size: 60px;
-  }
-
-  .graph-modal {
-    width: 130px;
   }
 
   .hero__image {
@@ -527,10 +522,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .graph-modal {
-    width: 110px;
-  }
-
   .hero-title {
     font-weight: 600;
     font-size: 46px;
