@@ -36,7 +36,7 @@
               <button class="button__register">Register</button>
             </div>
             <div class="burger_menu">
-              <svg width="40" height="30">
+              <svg width="30" height="20">
                 <use href="./images/icon.svg#burger-menu"></use>
               </svg>
             </div>
@@ -87,7 +87,15 @@
           </div>
           <div class="hero__image">
             <div class="hero_image_before">
-              <img src="./images/food.png" alt="food" />
+              <img
+                srcset="
+                  ./images/food.png    1x,
+                  ./images/food@2x.png 2x,
+                  ./images/food@3x.png 3x
+                "
+                src="./images/food.png"
+                alt="food"
+              />
             </div>
             <div class="meal-modal">
               <img

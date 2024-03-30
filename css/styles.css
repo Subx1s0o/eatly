@@ -490,6 +490,10 @@ body {
     width: 130px;
   }
 
+  .hero__image {
+    margin-right: 7%;
+  }
+
   .meal-modal {
     width: 60%;
   }
@@ -515,7 +519,6 @@ body {
 
   .hero__image {
     max-width: 80%;
-    margin-right: 3%;
   }
 
   .hero__buttons {
@@ -587,7 +590,7 @@ body {
 
   .meal-modal::before {
     width: 32px;
-    height: 18px;
+    height: 21px;
   }
 
   .hero-h-meal {
