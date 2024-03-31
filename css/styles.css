@@ -731,12 +731,28 @@ body {
   border-radius: 15px;
 }
 
-.tablet-app-mobile {
-  display: none;
+.third-main-img {
+  position: relative;
 }
 
 .third-button svg {
   margin-left: 5px;
+}
+
+.mobile-decor {
+  position: absolute;
+  top: -7%;
+  right: -15%;
+  rotate: -40deg;
+}
+
+.third-btn {
+  position: relative;
+}
+
+.mobile-decor-second {
+  position: absolute;
+  left: 200px;
 }
 
 @media (max-width: 768px) {
@@ -747,7 +763,7 @@ body {
 
   .third-h {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .third-ul {
@@ -757,14 +773,19 @@ body {
 
   .third-button {
     margin: auto;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 
   .third-main-img {
-    display: none;
+    order: 1;
   }
 
-  .tablet-app-mobile {
-    display: flex;
-  }
+  /* .mobile-decor-second {
+    width: 200px;
+    height: 100px;
+    left: 30%;
+    right: 50%;
+    bottom: -190%;
+    rotate: 140deg;
+  } */
 }
