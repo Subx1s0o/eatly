@@ -173,10 +173,6 @@ h2 {
   border-bottom: 2px solid #cbcbcb;
 }
 
-.third__container {
-  border-bottom: 2px solid #cbcbcb;
-}
-
 .logotype {
   margin-right: 103px;
 }
@@ -704,9 +700,16 @@ h2 {
 
 .third__container {
   display: flex;
-  justify-content: space-evenly;
   padding-top: 80px;
-  padding-bottom: 100px;
+}
+
+.border-third {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  padding: 30px 0px 100px;
+  border-bottom: 2px solid #cbcbcb;
 }
 
 .third-ul {
@@ -792,7 +795,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .third__container {
+  .border-third {
     flex-direction: column;
     align-items: center;
   }
