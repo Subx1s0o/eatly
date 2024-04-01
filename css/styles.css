@@ -901,7 +901,7 @@ h2 {
 }
 
 .card-content {
-  padding: 10px 35px;
+  padding: 10px 20px;
 }
 
 .card-content h3 {
@@ -915,12 +915,17 @@ h2 {
 .res_block {
   display: flex;
   flex-direction: column;
-
+  object-fit: cover;
   border: 1.25px solid #f4f4f6;
   border-radius: 30px;
   flex-basis: calc((100% - 60px) / 3);
   box-shadow: 6px 71px 36px 0 rgba(229, 229, 229, 0.7);
   background-color: #fff;
+}
+
+.res_img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .res_category {
@@ -949,15 +954,34 @@ h2 {
 
 .res_category p {
   color: #daa31a;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.res_second_category {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  background-color: #f7c5ba;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.res_second_category p {
+  color: #fb471d;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .dwn-content p::after {
   content: "";
   position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   top: 40%;
-  left: 50px;
+  left: 45px;
   border-radius: 100%;
   background-color: #8e97a6;
 }
@@ -974,6 +998,59 @@ h2 {
   }
 }
 
+@media (max-width: 991px) {
+  .bookmark-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-content h3 {
+    font-size: 13px;
+  }
+
+  .dwn-content p {
+    font-size: 12px;
+  }
+
+  .dwn-content p::after {
+    left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .dwn-content p {
+    font-size: 16px;
+  }
+
+  .dwn-content p::after {
+    left: 45px;
+  }
+  .bookmark-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .card-content h3 {
+    font-size: 13px;
+  }
+
+  .dwn-content p {
+    font-size: 12px;
+  }
+
+  .dwn-content p::after {
+    left: 40px;
+  }
+}
+
 /* ------------------------------END RESTORAUNT SECTION--------------------------------- */
 
 /* --------------------------------BURGER MENU---------------------------------- */
@@ -985,6 +1062,7 @@ h2 {
   opacity: 0;
   top: 0;
   left: 0;
+  overflow-y: auto;
   z-index: 999;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -995,11 +1073,9 @@ h2 {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  width: 100lvw;
-  height: 100lvh;
+  width: 100%;
 
   position: absolute;
-  overflow-y: auto;
 }
 
 .burger-overlay.is-open {
