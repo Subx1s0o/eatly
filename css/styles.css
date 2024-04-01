@@ -901,7 +901,15 @@ h2 {
 }
 
 .card-content {
-  padding: 0 35px;
+  padding: 10px 35px;
+}
+
+.card-content h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.62;
+  color: #323142;
 }
 
 .res_block {
@@ -909,22 +917,55 @@ h2 {
   flex-direction: column;
 
   border: 1.25px solid #f4f4f6;
-  border-radius: 25px;
+  border-radius: 30px;
   flex-basis: calc((100% - 60px) / 3);
   box-shadow: 6px 71px 36px 0 rgba(229, 229, 229, 0.7);
   background-color: #fff;
 }
 
 .res_category {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-
+  margin-bottom: 5px;
   background-color: #f7edd0;
   padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.dwn-content {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.dwn-content p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  line-height: 1.33;
+  color: #8e97a6;
+  margin-right: 10px;
 }
 
 .res_category p {
   color: #daa31a;
+}
+
+.dwn-content p::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 40%;
+  left: 50px;
+  border-radius: 100%;
+  background-color: #8e97a6;
+}
+
+.bookmark-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 @media (max-width: 768px) {
@@ -954,8 +995,8 @@ h2 {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100lvw;
+  height: 100lvh;
 
   position: absolute;
   overflow-y: auto;
