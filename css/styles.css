@@ -435,6 +435,42 @@ h2 {
   fill: #ff0000;
 }
 
+.buttons-auth {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.button__login_burg {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #6c5fbc;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border: 2px solid #6c5fbc;
+  border-radius: 18px;
+  padding: 17px 38px;
+}
+.button__register_burg {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #f9f9f9;
+  border: none;
+  background-color: #6c5fbc;
+  padding: 17px 26px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
 @media (max-width: 991px) {
   .container {
     padding: 0 16px;
