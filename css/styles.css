@@ -986,6 +986,22 @@ h2 {
   background-color: #8e97a6;
 }
 
+.res_third_category {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  background-color: #cef7ba;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.res_third_category p {
+  color: #36bb36;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .bookmark-icon {
   position: absolute;
   bottom: 0;
