@@ -900,13 +900,31 @@ h2 {
   gap: 30px;
 }
 
+.card-content {
+  padding: 0 35px;
+}
+
 .res_block {
   display: flex;
+  flex-direction: column;
+
   border: 1.25px solid #f4f4f6;
-  border-radius: 40px;
+  border-radius: 25px;
   flex-basis: calc((100% - 60px) / 3);
   box-shadow: 6px 71px 36px 0 rgba(229, 229, 229, 0.7);
   background-color: #fff;
+}
+
+.res_category {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f7edd0;
+  padding: 5px 8px;
+}
+
+.res_category p {
+  color: #daa31a;
 }
 
 @media (max-width: 768px) {
@@ -936,8 +954,8 @@ h2 {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  width: 100svw;
-  height: 100svh;
+  width: 100dvw;
+  height: 100dvh;
 
   position: absolute;
   overflow-y: auto;
