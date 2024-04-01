@@ -1003,9 +1003,13 @@ h2 {
 }
 
 .bookmark-icon {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
   right: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 @media (max-width: 768px) {
@@ -1045,7 +1049,7 @@ h2 {
   }
 
   .dwn-content p::after {
-    left: 45px;
+    left: 50px;
   }
   .bookmark-icon {
     width: 40px;
