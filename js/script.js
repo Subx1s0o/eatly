@@ -72,21 +72,82 @@ if (mediaQuery.matches) {
     .from(".hero__buttons", { opacity: 0, y: 40 })
     .from(".rating__content", { opacity: 0, y: 40 });
 
-  tl2.from([".features-h", ".features-p"], {
+  tl1.from(".third-main-img", {
+    x: -100,
     duration: 0.5,
     opacity: 0,
-    y: 10,
     scrollTrigger: {
-      trigger: ".features",
-      markers: true,
+      trigger: ".border-third",
       start: "-50% center ",
-      end: "100% center ",
-      scrub: false,
+      end: "15% 40% ",
+      scrub: true,
+    },
+  });
+
+  tl1.from(".third-text", {
+    x: 100,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".border-third",
+
+      start: "-50% center ",
+      end: "15% 40% ",
+      scrub: true,
+    },
+  });
+
+  tl1.from(".restoraunts-h", {
+    y: 100,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".restoraunts__container",
+      start: "-50% center ",
+      end: "15% 40% ",
+      scrub: true,
+    },
+  });
+
+  tl1.from(".res_block_ul li:nth-child(1)", {
+    x: -100,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".restoraunts__container",
+      start: "-50% center ",
+      end: "15% 40% ",
+      scrub: true,
+    },
+  });
+
+  tl1.from(".res_block_ul li:nth-child(2)", {
+    y: 100,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".restoraunts__container",
+      start: "-50% center ",
+      end: "15% 40% ",
+      scrub: true,
+    },
+  });
+
+  tl1.from(".res_block_ul li:nth-child(3)", {
+    x: 100,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".restoraunts__container",
+      start: "-50% center ",
+      end: "15% 40% ",
+      scrub: true,
     },
   });
 } else {
-  tl1
+  tl2
     .from(".logotype", { opacity: 0, x: -100 })
+    .from(".header__buttons", { opacity: 0, y: -50 })
     .from(".burger_menu", { opacity: 0, x: 30 })
     .from(".hero-text-first", { opacity: 0, y: -40 })
     .from(".hero-title", { opacity: 0, y: 30 })
@@ -95,16 +156,60 @@ if (mediaQuery.matches) {
     .from(".rating__content", { opacity: 0, y: 40 })
     .from(".hero__image", { opacity: 0, y: 40 });
 
-  tl2.from([".features-h", ".features-p"], {
+  tl2.from(".third-main-img", {
+    y: 50,
     duration: 0.5,
     opacity: 0,
-    y: 10,
     scrollTrigger: {
-      trigger: ".features",
-      markers: true,
-      start: "-15% center ",
-      end: "100% center ",
-      scrub: false,
+      trigger: ".border-third",
+
+      start: "15% center ",
+      end: "45% 40% ",
+      scrub: true,
     },
   });
+
+  tl2.from(".third-text", {
+    y: 100,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".border-third",
+
+      start: "-15% center ",
+      end: "15% 40% ",
+      scrub: true,
+    },
+  });
+
+  tl2.from(".restoraunts-h", {
+    y: 100,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".restoraunts__container",
+      start: "-50% center ",
+      end: "15% 40% ",
+      scrub: true,
+    },
+  });
+
+  tl2.from(
+    [
+      ".res_block_ul li:nth-child(1)",
+      ".res_block_ul li:nth-child(2)",
+      ".res_block_ul li:nth-child(3)",
+    ],
+    {
+      y: 150,
+      duration: 0.5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".restoraunts__container",
+        start: "-10% center ",
+        end: "15% 40% ",
+        scrub: true,
+      },
+    }
+  );
 }
