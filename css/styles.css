@@ -1272,3 +1272,57 @@ h2 {
 }
 
 /* -------------------------------- END BURGER MENU---------------------------------- */
+
+.upsvg {
+  rotate: -90deg;
+}
+
+.btn-up {
+  position: fixed;
+  cursor: pointer;
+  display: none;
+  bottom: 50px;
+  right: 40px;
+  width: 70px;
+  border-radius: 100%;
+  border: 5px solid #b4aaf0;
+  background-color: #6c5fbc;
+  height: 70px;
+  padding: 0;
+  animation: up-btn 0.5s ease forwards;
+}
+
+@keyframes up-btn {
+  from {
+    transform: translateY(300%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dwn-btn {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(300%);
+  }
+}
+
+.btn-up.active {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .btn-up {
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 30px;
+  }
+  .upsvg {
+    width: 25px;
+    height: 25px;
+  }
+}

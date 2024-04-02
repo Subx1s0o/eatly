@@ -27,3 +27,28 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+const goTopBtn = document.querySelector(".btn-up");
+
+window.addEventListener("scroll", trackScroll);
+
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  const scrolled = window.scrollY;
+
+  const coords = document.documentElement.clientHeight;
+
+  if (scrolled > coords / 2) {
+    goTopBtn.classList.add("active");
+  } else {
+    goTopBtn.classList.remove("active");
+  }
+}
+
+function goTop() {
+  if (window.scrollY > 0) {
+    window.scrollBy(0, -25); //другий аргумент - це швидкість скролу
+    setTimeout(goTop, 0);
+  }
+}
