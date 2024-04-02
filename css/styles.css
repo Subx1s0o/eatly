@@ -1273,6 +1273,8 @@ h2 {
 
 /* -------------------------------- END BURGER MENU---------------------------------- */
 
+/* -------------------------------- SCROLL BTN --------------------------------- */
+
 .upsvg {
   rotate: -90deg;
 }
@@ -1301,15 +1303,6 @@ h2 {
   }
 }
 
-@keyframes dwn-btn {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(300%);
-  }
-}
-
 .btn-up.active {
   display: block;
 }
@@ -1326,3 +1319,4 @@ h2 {
     height: 25px;
   }
 }
+/* -------------------------------- END SCROLL BTN --------------------------------- */
