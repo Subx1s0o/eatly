@@ -1307,6 +1307,12 @@ h2 {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .btn-up {
+    border: 3px solid #b4aaf0;
+  }
+}
+
 @media (max-width: 480px) {
   .btn-up {
     width: 60px;
@@ -1320,3 +1326,15 @@ h2 {
   }
 }
 /* -------------------------------- END SCROLL BTN --------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6c5fbc;
+  border-radius: 5px;
+}
