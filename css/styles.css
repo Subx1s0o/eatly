@@ -512,13 +512,11 @@ h2 {
   position: absolute;
   bottom: -5%;
   left: 5%;
-  max-width: 50%;
   background-color: #fff;
   border: 0.2px solid #edf2f7;
   box-shadow: 10px 13px 27px 0 rgba(26, 32, 44, 0.15);
   border-radius: 12px;
   padding: 8px 0;
-  object-fit: contain;
 }
 
 .graph-modal::before {
@@ -631,7 +629,19 @@ h2 {
 @media (max-width: 380px) {
   .graph-modal {
     width: 85px;
+    height: 73px;
   }
+
+  .graph-modal svg {
+    width: 85px;
+    height: 73px;
+  }
+
+  .svg_svg image {
+    width: 85px;
+    height: 73px;
+  }
+
   .graph-modal::before {
     width: 26px;
     height: 26px;
