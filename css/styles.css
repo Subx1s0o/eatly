@@ -135,6 +135,12 @@ a {
   text-decoration: none;
 }
 
+picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .stroke-svg {
   stroke: white;
 }
@@ -930,7 +936,6 @@ h2 {
 .res_block {
   display: flex;
   flex-direction: column;
-  object-fit: cover;
   border: 1.25px solid #f4f4f6;
   border-radius: 30px;
   flex-basis: calc((100% - 60px) / 3);
@@ -939,6 +944,7 @@ h2 {
 }
 
 .res_img {
+  object-fit: cover;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }

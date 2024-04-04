@@ -48,7 +48,7 @@ function trackScroll() {
 
 function goTop() {
   if (window.scrollY > 0) {
-    window.scrollBy(0, -20); //другий аргумент - це швидкість скролу
+    window.scrollBy(0, -30); //другий аргумент - це швидкість скролу
     setTimeout(goTop, 0);
   }
 }
