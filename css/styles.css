@@ -135,6 +135,10 @@ a {
   text-decoration: none;
 }
 
+.stroke-svg {
+  stroke: white;
+}
+
 /* ------------------------------ END RESET--------------------------------- */
 
 .container {
@@ -903,6 +907,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 0 40px;
+  margin-bottom: 70px;
 }
 
 .res_block_ul {
@@ -1022,6 +1027,27 @@ h2 {
   border: none;
 }
 
+.right-svg {
+  stroke: #acadb9;
+}
+
+.more {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.more p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 226%;
+  letter-spacing: -0.01em;
+  color: #acadb9;
+}
+
 @media (max-width: 768px) {
   .res_block_ul {
     flex-direction: column;
@@ -1029,7 +1055,7 @@ h2 {
 }
 
 @media (max-width: 991px) {
-  .bookmark-icon {
+  .bookmark-icon svg {
     width: 35px;
     height: 35px;
   }
@@ -1047,6 +1073,11 @@ h2 {
   .dwn-content p::after {
     left: 40px;
   }
+
+  .bookmark-icon svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1061,7 +1092,7 @@ h2 {
   .dwn-content p::after {
     left: 50px;
   }
-  .bookmark-icon {
+  .bookmark-icon svg {
     width: 40px;
     height: 40px;
   }
