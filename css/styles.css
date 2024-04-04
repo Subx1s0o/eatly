@@ -1496,4 +1496,8 @@ footer {
   .nav-li-footer {
     font-size: 20px;
   }
+
+  .copyright p {
+    font-size: 14px;
+  }
 }
