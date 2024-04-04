@@ -216,11 +216,6 @@ h2 {
   transition: color 250ms ease-in-out;
 }
 
-.nav-li:hover,
-.nav-li:focus {
-  color: #6c5fbc;
-}
-
 .current {
   color: #5c4dbe;
   font-weight: 700;
@@ -252,6 +247,7 @@ h2 {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: color cubic-bezier(0.16, 0.52, 0.83, 0.67) 250ms;
 }
 .button__register {
   font-family: "Inter", sans-serif;
@@ -265,6 +261,7 @@ h2 {
   padding: 17px 26px;
   border-radius: 18px;
   cursor: pointer;
+  transition: background-color cubic-bezier(0.16, 0.52, 0.83, 0.67) 250ms;
 }
 
 .unscroll {
@@ -395,6 +392,7 @@ h2 {
   background-color: #6c5fbc;
   border: none;
   border-radius: 12.5px;
+  transition: background-color cubic-bezier(0.16, 0.52, 0.83, 0.67) 250ms;
 }
 .pro__btn {
   cursor: pointer;
@@ -408,6 +406,8 @@ h2 {
   background-color: #fff;
   border: 2px solid #6c5fbc;
   border-radius: 12.5px;
+  transition: color cubic-bezier(0.16, 0.52, 0.83, 0.67) 250ms,
+    background-color cubic-bezier(0.16, 0.52, 0.83, 0.67) 250ms;
 }
 .rating__content {
   display: flex;
@@ -804,6 +804,7 @@ h2 {
   border: none;
   margin-left: 10px;
   border-radius: 15px;
+  transition: background-color cubic-bezier(0.16, 0.52, 0.83, 0.67) 250ms;
 }
 
 .third-main-img {
@@ -1435,11 +1436,7 @@ footer {
   text-transform: capitalize;
   color: #999;
   padding: 50px 0;
-}
-
-.nav-li-footer:hover,
-.nav-li-footer:focus {
-  color: #5c4dbe;
+  transition: color cubic-bezier(0.16, 0.52, 0.83, 0.67) 250ms;
 }
 
 .copyright {
@@ -1462,9 +1459,8 @@ footer {
   gap: 50px;
 }
 
-.footer-icons svg:hover,
-.footer-icons svg:focus {
-  fill: #5c4dbe;
+.footer-icons svg {
+  transition: fill cubic-bezier(0.16, 0.52, 0.83, 0.67) 150ms;
 }
 
 .mob-footer {
@@ -1536,5 +1532,43 @@ footer {
 
   .copyright p {
     font-size: 14px;
+  }
+}
+
+@media (hover: hover) {
+  .nav-li:hover,
+  .nav-li:focus {
+    color: #6c5fbc;
+  }
+  .footer-icons svg:hover,
+  .footer-icons svg:focus {
+    fill: #5c4dbe;
+  }
+  .nav-li-footer:hover,
+  .nav-li-footer:focus {
+    color: #5c4dbe;
+  }
+  .button__login:hover,
+  .button__login:focus {
+    color: #5c4dbe;
+  }
+  .button__register:hover,
+  .button__register:focus {
+    background-color: #5c4dbe;
+  }
+  .started__btn:hover,
+  .started__btn:focus {
+    background-color: #5c4dbe;
+  }
+
+  .pro__btn:hover,
+  .pro__btn:focus {
+    color: white;
+    background-color: #6c5fbc;
+  }
+
+  .third-button:hover,
+  .third-button:focus {
+    background-color: #5c4dbe;
   }
 }
