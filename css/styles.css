@@ -133,6 +133,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 picture {
@@ -1046,7 +1047,7 @@ h2 {
   margin-right: 15px;
 }
 
-.more p {
+.more a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
