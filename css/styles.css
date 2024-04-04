@@ -1432,10 +1432,11 @@ footer {
 
 .mob-footer {
   display: none;
+  flex-direction: column;
 }
 
 .mob-footer-elements {
-  display: contents;
+  display: flex;
 }
 
 @media (max-width: 768px) {
@@ -1446,19 +1447,53 @@ footer {
   .mob-footer {
     display: flex;
   }
+  .logotype-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 53px;
+  }
+  .nav-ul-footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-li-footer {
+    text-transform: uppercase;
+    padding: 0;
+  }
+
+  .copyright {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-icons {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logotype-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+  }
 
   .footer-icons {
-    gap: 20px;
+    gap: 50px;
+  }
+
+  .border-footer {
+    justify-content: center;
+    text-align: center;
   }
 
   .nav-ul-footer {
-    flex-direction: column;
-    gap: 30px;
+    gap: 40px;
   }
 
   .nav-li-footer {
-    padding: 0;
-    font-size: 14px;
-    text-transform: uppercase;
+    font-size: 20px;
   }
 }
