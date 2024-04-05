@@ -1174,7 +1174,19 @@ h2 {
 }
 
 .menu-item {
+  position: relative;
   padding: 30px 0 25px;
+}
+
+.favorites {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: fill cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
 }
 
 .menu-ul {
@@ -1726,5 +1738,10 @@ footer {
 
   .add-btn:hover {
     background-color: #444257;
+  }
+
+  .favorites:hover,
+  .favorites:focus {
+    fill: red;
   }
 }
