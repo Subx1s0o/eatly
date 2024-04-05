@@ -183,8 +183,15 @@ h2 {
 .border {
   display: flex;
   align-items: center;
-
   flex-grow: 1;
+  border-bottom: 2px solid #cbcbcb;
+}
+
+.border-rest {
+  display: flex;
+  margin: 0 15px;
+  margin-top: 65px;
+  align-items: center;
   border-bottom: 2px solid #cbcbcb;
 }
 
@@ -710,7 +717,7 @@ h2 {
 
 .features-ul li {
   padding: 0 30px;
-  border-right: 1px solid #c5c5c5;
+  border-right: 2px solid #c5c5c5;
 }
 
 .features-ul li:last-child {
@@ -1044,7 +1051,7 @@ h2 {
   justify-content: flex-end;
   gap: 5px;
   align-items: center;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .more a {
@@ -1121,6 +1128,143 @@ h2 {
 }
 
 /* ------------------------------END RESTORAUNT SECTION--------------------------------- */
+
+/* ----------------------------menu section---------------------------------- */
+
+.add-btn {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  width: 43px;
+  height: 39px;
+  border: none;
+  background-color: #323142;
+  cursor: pointer;
+  transition: background-color cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
+}
+
+.add-btn svg {
+  fill: white;
+}
+
+.dwn-menu {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 156%;
+}
+
+.menu-item-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.menu-item {
+  padding: 30px 0 25px;
+}
+
+.menu-ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-ul li {
+  flex-basis: calc(100% - 90px / 4);
+
+  border: 1.44px solid #f4f4f6;
+  border-radius: 35px;
+  box-shadow: 7px 82px 41px 0 rgba(229, 229, 229, 0.7);
+  background-color: #fff;
+}
+
+.menu_container {
+  padding-bottom: 120px;
+}
+
+.card-menu-container {
+  padding: 0 23px;
+}
+
+.card-menu-container h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 163%;
+  color: #323142;
+}
+
+.dwn-menu span {
+  font-size: 18px;
+  color: #8e97a6;
+}
+
+.dwn-content-menu {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.dwn-content-menu p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #8e97a6;
+  margin-right: 10px;
+}
+
+.dwn-content-menu p::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 40%;
+  left: 45px;
+  border-radius: 100%;
+  background-color: #8e97a6;
+}
+
+.dish_supreme_category {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  background-color: #baf7df;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.dish_supreme_category p {
+  color: #36bbbb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@media (max-width: 991px) {
+  .menu-ul {
+    flex-wrap: wrap;
+  }
+
+  .menu-ul li {
+    max-width: 264px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-ul li {
+    max-width: 300px;
+  }
+}
+
+/* ---------------------------- end menu section---------------------------------- */
 
 /* --------------------------------BURGER MENU---------------------------------- */
 
@@ -1571,5 +1715,9 @@ footer {
   .third-button:hover,
   .third-button:focus {
     background-color: #5c4dbe;
+  }
+
+  .add-btn:hover {
+    background-color: #444257;
   }
 }
