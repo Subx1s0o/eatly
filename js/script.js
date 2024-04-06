@@ -72,78 +72,78 @@ if (mediaQuery.matches) {
     .from(".hero__buttons", { opacity: 0, y: 40 })
     .from(".rating__content", { opacity: 0, y: 40 });
 
-  tl1.from(".third-main-img", {
-    x: -100,
-    duration: 0.5,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".border-third",
-      start: "-50% center ",
-      end: "15% 40% ",
-      scrub: true,
-    },
-  });
+  //   tl1.from(".third-main-img", {
+  //     x: -100,
+  //     duration: 0.5,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".border-third",
+  //       start: "-50% center ",
+  //       end: "15% 40% ",
+  //       scrub: true,
+  //     },
+  //   });
 
-  tl1.from(".third-text", {
-    x: 100,
-    duration: 0.5,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".border-third",
+  //   tl1.from(".third-text", {
+  //     x: 100,
+  //     duration: 0.5,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".border-third",
 
-      start: "-50% center ",
-      end: "15% 40% ",
-      scrub: true,
-    },
-  });
+  //       start: "-50% center ",
+  //       end: "15% 40% ",
+  //       scrub: true,
+  //     },
+  //   });
 
-  tl1.from(".restoraunts-h", {
-    y: 100,
-    duration: 0.5,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".restoraunts__container",
-      start: "-50% center ",
-      end: "15% 40% ",
-      scrub: true,
-    },
-  });
+  //   tl1.from(".restoraunts-h", {
+  //     y: 100,
+  //     duration: 0.5,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".restoraunts__container",
+  //       start: "-50% center ",
+  //       end: "15% 40% ",
+  //       scrub: true,
+  //     },
+  //   });
 
-  tl1.from(".res_block_ul li:nth-child(1)", {
-    x: -100,
-    duration: 0.5,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".restoraunts__container",
-      start: "-50% center ",
-      end: "15% 40% ",
-      scrub: true,
-    },
-  });
+  //   tl1.from(".res_block_ul li:nth-child(1)", {
+  //     x: -100,
+  //     duration: 0.5,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".restoraunts__container",
+  //       start: "-50% center ",
+  //       end: "15% 40% ",
+  //       scrub: true,
+  //     },
+  //   });
 
-  tl1.from(".res_block_ul li:nth-child(2)", {
-    y: 100,
-    duration: 0.5,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".restoraunts__container",
-      start: "-50% center ",
-      end: "15% 40% ",
-      scrub: true,
-    },
-  });
+  //   tl1.from(".res_block_ul li:nth-child(2)", {
+  //     y: 100,
+  //     duration: 0.5,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".restoraunts__container",
+  //       start: "-50% center ",
+  //       end: "15% 40% ",
+  //       scrub: true,
+  //     },
+  //   });
 
-  tl1.from(".res_block_ul li:nth-child(3)", {
-    x: 100,
-    duration: 0.5,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".restoraunts__container",
-      start: "-50% center ",
-      end: "15% 40% ",
-      scrub: true,
-    },
-  });
+  //   tl1.from(".res_block_ul li:nth-child(3)", {
+  //     x: 100,
+  //     duration: 0.5,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".restoraunts__container",
+  //       start: "-50% center ",
+  //       end: "15% 40% ",
+  //       scrub: true,
+  //     },
+  //   });
 } else {
   tl2
     .from(".logotype", { opacity: 0, x: -100 })
@@ -156,60 +156,68 @@ if (mediaQuery.matches) {
     .from(".rating__content", { opacity: 0, y: 40 })
     .from(".hero__image", { opacity: 0, y: 40 });
 
-  tl2.from(".third-main-img", {
-    y: 50,
-    duration: 0.5,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".border-third",
+  //   tl2.from(".third-main-img", {
+  //     y: 50,
+  //     duration: 0.5,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".border-third",
 
-      start: "15% center ",
-      end: "45% 40% ",
-      scrub: true,
-    },
-  });
+  //       start: "15% center ",
+  //       end: "45% 40% ",
+  //       scrub: true,
+  //     },
+  //   });
 
-  tl2.from(".third-text", {
-    y: 100,
-    duration: 0.5,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".border-third",
+  //   tl2.from(".third-text", {
+  //     y: 100,
+  //     duration: 0.5,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".border-third",
 
-      start: "-15% center ",
-      end: "15% 40% ",
-      scrub: true,
-    },
-  });
+  //       start: "-15% center ",
+  //       end: "15% 40% ",
+  //       scrub: true,
+  //     },
+  //   });
 
-  tl2.from(".restoraunts-h", {
-    y: 100,
-    duration: 0.5,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".restoraunts__container",
-      start: "-50% center ",
-      end: "15% 40% ",
-      scrub: true,
-    },
-  });
+  //   tl2.from(".restoraunts-h", {
+  //     y: 100,
+  //     duration: 0.5,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".restoraunts__container",
+  //       start: "-50% center ",
+  //       end: "15% 40% ",
+  //       scrub: true,
+  //     },
+  //   });
 
-  tl2.from(
-    [
-      ".res_block_ul li:nth-child(1)",
-      ".res_block_ul li:nth-child(2)",
-      ".res_block_ul li:nth-child(3)",
-    ],
-    {
-      y: 150,
-      duration: 0.5,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: ".restoraunts__container",
-        start: "-10% center ",
-        end: "15% 40% ",
-        scrub: true,
-      },
-    }
-  );
+  //   tl2.from(
+  //     [
+  //       ".res_block_ul li:nth-child(1)",
+  //       ".res_block_ul li:nth-child(2)",
+  //       ".res_block_ul li:nth-child(3)",
+  //     ],
+  //     {
+  //       y: 150,
+  //       duration: 0.5,
+  //       opacity: 0,
+  //       scrollTrigger: {
+  //         trigger: ".restoraunts__container",
+  //         start: "-10% center ",
+  //         end: "15% 40% ",
+  //         scrub: true,
+  //       },
+  //     }
+  //   );
+}
+
+function RegisterLocate() {
+  window.location.href = "sign-up.html";
+}
+
+function LoginLocate() {
+  window.location.href = "sign-in.html";
 }

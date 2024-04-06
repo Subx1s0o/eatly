@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/sign-up.css" />
+    <link rel="stylesheet" href="./css/sign-in.css" />
   </head>
   <body>
     <section>
@@ -31,7 +31,7 @@
           </header>
 
           <div class="elements">
-            <h1>Sign Up To eatly</h1>
+            <h1>Sign In To eatly</h1>
             <div class="auth-buttons">
               <button>
                 <svg class="auth-svg" width="25" height="25">
@@ -46,20 +46,6 @@
             </div>
             <p class="or">OR</p>
             <form>
-              <div class="input-container">
-                <label for="usernameInput"></label>
-                <div class="icon-input">
-                  <input
-                    id="usernameInput"
-                    placeholder="FULL NAME"
-                    type="text"
-                  />
-                  <svg class="icone" width="15" height="15">
-                    <use href="./images/icon.svg#icon-user"></use>
-                  </svg>
-                </div>
-              </div>
-
               <div class="input-container">
                 <label for="emailInput"></label>
                 <div class="icon-input">
@@ -89,12 +75,16 @@
                 </div>
               </div>
 
+              <div class="forget-pass">
+                <a href="">Forget Password ?</a>
+              </div>
+
               <button class="submit-btn" type="submit">Sign Up</button>
             </form>
 
             <p class="dwn-text">
-              Already Have An Account?
-              <a class="login" href="sign-in.html">Sign In</a>
+              Create A New Account?
+              <a class="register" href="sign-up.html">Sign Up</a>
             </p>
           </div>
           <footer>
@@ -165,8 +155,8 @@
         <li><a class="nav-li-burg" href="">Contact</a></li>
       </ul>
       <div class="buttons-auth">
-        <button onclick="LoginLocate()" class="button__login_burg">
-          Login
+        <button onclick="RegisterLocate()" class="button__register_burg">
+          Register
         </button>
       </div>
       <p class="h-burg">eatly</p>

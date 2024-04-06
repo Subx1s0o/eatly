@@ -238,8 +238,8 @@ form {
   margin-bottom: 20px;
 }
 
-.input-container:nth-child(3) {
-  margin-bottom: 30px;
+.input-container:nth-child(2) {
+  margin-bottom: 15px;
 }
 
 input {
@@ -329,7 +329,7 @@ input:focus-within + .icone {
   font-weight: 400;
   letter-spacing: 0.01em;
   color: #3e3e3e;
-  margin-bottom: 100px;
+  margin-bottom: 155px;
 }
 
 .dwn-text a {
@@ -485,7 +485,34 @@ input:focus-within + .icone {
   padding: 0 15px;
 }
 
+.forget-pass {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.forget-pass a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #6c5fbc;
+}
+
 /* ----------------------------------------------BURGER------------------------------------- */
+
+.button__register_burg {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #f9f9f9;
+  border: none;
+  background-color: #6c5fbc;
+  padding: 17px 26px;
+  border-radius: 18px;
+  cursor: pointer;
+}
 
 .burger-overlay {
   position: fixed;
