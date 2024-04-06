@@ -312,7 +312,7 @@ input:focus-within + .icone {
   font-weight: 400;
   letter-spacing: 0.01em;
   color: #3e3e3e;
-  margin-bottom: 103px;
+  margin-bottom: 100px;
 }
 
 .dwn-text a {
@@ -333,4 +333,124 @@ input:focus-within + .icone {
   letter-spacing: 0.01em;
   text-align: right;
   color: #718096;
+}
+
+.second_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__image {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+.meal-modal {
+  position: absolute;
+  top: -10%;
+  left: 55%;
+  background-color: #fff;
+  display: flex;
+  box-shadow: -7px 9px 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 4px 16px 4px 7px;
+}
+
+.hero-h-meal {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #323142;
+  margin-bottom: 5px;
+}
+
+.modal-text {
+  margin-left: 13px;
+  margin-top: 12px;
+}
+
+.hero-p-meal {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 1.4;
+  color: #323142;
+}
+
+.hero-meal-time {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 1.4;
+  color: #acadb9;
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 5px;
+  align-items: flex-end;
+}
+
+.graph-modal {
+  position: absolute;
+  bottom: 1%;
+  left: 7%;
+  background-color: #fff;
+  border: 0.2px solid #edf2f7;
+  box-shadow: 10px 13px 27px 0 rgba(26, 32, 44, 0.15);
+  border-radius: 12px;
+  padding: 8px 0;
+}
+
+.second-text {
+  text-align: center;
+}
+
+.second-text h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 110%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.second-text p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 9px;
+  max-width: 355px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #ffffffb2;
+}
+
+@media (max-width: 950px) {
+  .meal-modal img {
+    width: 47px;
+    height: 47px;
+  }
+  .hero__image {
+    margin-right: 5%;
+  }
+
+  .hero-meal-time {
+    margin-bottom: 0px;
+  }
+
+  .modal-text {
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+  .hero-h-meal {
+    font-size: 9px;
+  }
+
+  .meal-modal {
+    left: 51%;
+  }
 }
