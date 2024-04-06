@@ -431,6 +431,7 @@ h2 {
 .rating__stars {
   margin-left: 20px;
   margin-right: 9px;
+  margin-bottom: 3px;
 }
 .rating__numbers {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -439,6 +440,7 @@ h2 {
   line-height: 1.5;
   opacity: 0.7;
   color: #334155;
+  margin-bottom: 2px;
 }
 
 .hero__image {
