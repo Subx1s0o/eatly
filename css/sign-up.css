@@ -496,6 +496,18 @@ input:focus-within + .icone {
   }
 
   .meal-modal {
+    left: 61%;
+  }
+}
+
+@media (max-width: 875px) {
+  .meal-modal {
+    left: 55%;
+  }
+}
+
+@media (max-width: 800px) {
+  .meal-modal {
     left: 51%;
   }
 }
