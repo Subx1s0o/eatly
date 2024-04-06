@@ -53,7 +53,7 @@ function goTop() {
   }
 }
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const tl1 = gsap.timeline({ defaults: { duration: 0.2 } });
 const tl2 = gsap.timeline({ defaults: { duration: 0.3 } });

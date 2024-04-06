@@ -154,7 +154,7 @@ button {
 -----------------------------------end reset----------------------------- */
 
 .container {
-  max-width: 1500px;
+  max-width: 1280px;
   margin: 0 auto;
   min-height: 100%;
   display: flex;
@@ -716,6 +716,34 @@ input:focus-within + .icone {
   }
   .burger_menu {
     display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .elements h1 {
+    font-size: 28px;
+  }
+
+  .or {
+    font-size: 13px;
+  }
+
+  input {
+    width: 300px;
+  }
+
+  .submit-btn {
+    margin-top: 40px;
+  }
+
+  .auth-buttons button {
+    padding: 10px 45px;
+  }
+}
+
+@media (max-width: 380px) {
+  input {
+    width: 250px;
   }
 }
 
